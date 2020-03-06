@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Solway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quantico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Coda&display=swap");
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff") format("woff"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7") format("svg");
+}
+  
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100%;
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;  
+}
+
+.calculator {
+  background: #333a4d;
+  padding: 5px;
+  width: 320px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.formulaScreen {
+  min-height: 85px;
+  font-family: digital;
+  font-size: 30px;
+  color: orange;
+  align-items: center;
+  display: flex;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  justify-content: flex-end;
+}
+
+.outputScreen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-family: digital;
+  color: white;
+  line-height: 35px;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: black;
+  border: 1px solid lightgrey;
+  font-family: 'Coda', 'Quantico', 'Solway', sans-serif;
+  font-size: 20px;
+  cursor: default;
+  &:hover {
+    color: white;
+    background: #333a4d;
+    border: .05em solid #333a4d;
+    z-index: 3;
+  }
+}
+
+.lrg-button {
+  width: 160px;
+}
+
+#divide, #multiply, #add, #subtract {
+  background: lighten(#FF8C00, 15%);
+  &:hover{
+    background: #333a4d;
+  }
+}
+
+#clear {
+  background: #A9A9A9;
+  &:hover{
+    background: #333a4d;
+  }
+}
+
+#zero {
+  border-radius: 0px 0px 0px 10px;
+}
+
+#equals {
+  border-radius: 0px 0px 10px 0px;
+  background: #FF8C00;
+  &:hover{
+    background: #333a4d;
+  }
+}
+
+.author {
+  text-align: center;
+  font-family: 'Quantico', sans-serif;
+  margin-top: 15px;
+  a {
+    text-decoration: none;
+    color: #00264d;
+    line-height: 26px;
+  }
+}
