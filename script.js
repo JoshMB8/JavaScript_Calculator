@@ -1,5 +1,3 @@
-serviceWorker.register();
-
 const isOperator = /[x/+‑]/,
   endsWithOperator = /[x+‑/]$/,
   endsWithNegativeSign = /[x/+]‑$/,
